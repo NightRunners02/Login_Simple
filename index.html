@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login page</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NightZonn Login</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="login-box">
-        <div class="login-header">
-            <header>Login</header>
-        </div>
-        <div class="input-box">
-            <input type="text" class="input-field" placeholder="Email" autocomplete="off" required>
-        </div>
-        <div class="input-box">
-            <input type="password" class="input-field" placeholder="Password" autocomplete="off" required>
-        </div>
-        <div class="forgot">
-            <section>
-                <input type="checkbox" id="check">
-                <label for="check">Remember Me</label>
-            </section>
-            <section>
-                <a href="#">Forgot password ?</a>
-            </section>
-        </div>
-        <div class="input-submit">
-           <button class="submit-btn" id="submit"></button>
-           <label for="submit">Sign In</label>
-        </div>
-        <div class="sign-up-link">
-            <p>Don 't have account?</p>
-        </div>
-    </div>
+  <canvas id="particles"></canvas>
+
+  <nav class="navbar">
+    <h2 class="glitch" data-text="NightZonn">NightZonn</h2>
+    <a href="history.html" class="rgb-link">Riwayat Akun</a>
+  </nav>
+
+  <div class="login-container glass">
+    <h1 class="glitch" data-text="LOGIN">LOGIN</h1>
+
+    <form id="loginForm">
+      <input type="text" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+
+      <div class="options">
+        <label><input type="checkbox" id="remember"> Remember Me</label>
+        <a href="forgot.html" class="rgb-link">Forgot Password?</a>
+      </div>
+
+      <button type="submit" class="btn glitch-btn">Sign In</button>
+
+      <p class="register-text">Belum punya akun? 
+        <a href="register.html" class="rgb-link">Daftar Sekarang</a>
+      </p>
+    </form>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="particles.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

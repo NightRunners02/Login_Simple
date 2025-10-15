@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lupa Password</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="particles"></canvas>
+
+  <div class="forgot-container glass">
+    <h1 class="glitch" data-text="FORGOT PASSWORD">FORGOT PASSWORD</h1>
+
+    <form id="forgotForm">
+      <input type="text" id="forgotEmail" placeholder="Masukkan Email Anda" required>
+      <button type="submit" class="btn glitch-btn">Reset Password</button>
+    </form>
+
+    <a href="index.html" class="rgb-link">Kembali ke Login</a>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="particles.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
